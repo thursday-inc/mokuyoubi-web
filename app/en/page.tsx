@@ -1,9 +1,9 @@
 "use client";
 
-import { Layout } from "./components/Layout";
+import { Layout } from "../components/Layout";
 import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function HomeEN() {
   const router = useRouter();
 
   return (
@@ -25,15 +25,16 @@ export default function Home() {
       </div>
 
       <h1 className="text-5xl font-bold text-green-800">mokuyoubi.org</h1>
+
       <p className="mt-4 text-lg text-green-700/70">
-        アプリやサービスを作る、小さなチームです。
+        A small team making apps and services.
       </p>
 
       <a
-        href="/hoshigo"
+        href="/en/hoshigo"
         className="inline-block mt-10 px-8 py-3 rounded-full bg-green-800/10 text-green-800 hover:bg-green-800/20 transition"
       >
-        ▶ プロダクトを見る
+        ▶ See our products
       </a>
     </Layout>
   );
