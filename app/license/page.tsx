@@ -15,7 +15,7 @@ export default function LicensePage() {
 
         {/* 説明 */}
         <p className="text-gray-700 mb-2">
-          アプリ「星碁」はオープンソースソフトウェアを利用しています。
+          このアプリはオープンソースソフトウェアを利用しています。
         </p>
         <p className="text-sm text-gray-500 mb-8">
           ※ WGo ライブラリ（web_test/wgo/）は本アプリには含まれていません。
@@ -26,13 +26,26 @@ export default function LicensePage() {
           onClick={() => setOpen(!open)}
           className="w-full bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg px-4 py-3 text-left font-semibold text-gray-800 flex justify-between items-center"
         >
-          <span>MIT License</span>
+          <span>goscorer - MIT License</span>
           <span className="text-gray-500">{open ? "▲ 閉じる" : "▼ 開く"}</span>
         </button>
 
         {/* Accordion 中身 */}
         {open && (
           <div className="mt-4 p-6 bg-gray-50 rounded-lg border border-gray-200">
+            <div className="mb-4">
+              <p className="text-sm text-gray-600 mb-2">
+                <strong>goscorer</strong> - 囲碁の終局判定・得点計算ライブラリ
+              </p>
+              <a
+                href="https://github.com/lightvector/goscorer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 hover:text-blue-800 underline"
+              >
+                https://github.com/lightvector/goscorer
+              </a>
+            </div>
             <pre className="text-xs leading-relaxed text-gray-700 whitespace-pre-wrap font-mono">
               {`MIT License
 
