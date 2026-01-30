@@ -15,7 +15,7 @@ export default function LicensePage() {
 
         {/* 説明 */}
         <p className="text-gray-700 mb-2">
-          このアプリはオープンソースソフトウェアを利用しています。
+          アプリ「星碁」はオープンソースソフトウェアを利用しています。
         </p>
         <p className="text-sm text-gray-500 mb-8">
           ※ WGo ライブラリ（web_test/wgo/）は本アプリには含まれていません。
@@ -27,16 +27,14 @@ export default function LicensePage() {
           className="w-full bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg px-4 py-3 text-left font-semibold text-gray-800 flex justify-between items-center"
         >
           <span>MIT License</span>
-          <span className="text-gray-500">
-            {open ? "▲ 閉じる" : "▼ 開く"}
-          </span>
+          <span className="text-gray-500">{open ? "▲ 閉じる" : "▼ 開く"}</span>
         </button>
 
         {/* Accordion 中身 */}
         {open && (
           <div className="mt-4 p-6 bg-gray-50 rounded-lg border border-gray-200">
             <pre className="text-xs leading-relaxed text-gray-700 whitespace-pre-wrap font-mono">
-{`MIT License
+              {`MIT License
 
 Copyright 2024 David J Wu ("lightvector").
 
